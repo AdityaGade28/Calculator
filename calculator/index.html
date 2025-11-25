@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="calculator">
+        <div class="display-container">
+            <input type="text" class="preview" id="preview" disabled>
+            <input type="text" class="display" id="display" disabled>
+        </div>
+        <div class="buttons">
+            <div class="row">
+                <button class="button clear" id="clear">C</button>
+                <button class="button operator" id="backspace">⌫</button>
+                <button class="button operator" id="toggle-sign">+/-</button>
+                <button class="button operator" data-op="/">/</button>
+            </div>
+            <div class="row">
+                <button class="button number">7</button>
+                <button class="button number">8</button>
+                <button class="button number">9</button>
+                <button class="button operator" data-op="*">*</button>
+            </div>
+            <div class="row">
+                <button class="button number">4</button>
+                <button class="button number">5</button>
+                <button class="button number">6</button>
+                <button class="button operator" data-op="-">-</button>
+            </div>
+            <div class="row">
+                <button class="button number">1</button>
+                <button class="button number">2</button>
+                <button class="button number">3</button>
+                <button class="button operator" data-op="+">+</button>
+            </div>
+            <div class="row">
+                <button class="button number" style="flex: 2;">0</button>
+                <button class="button number">.</button>
+                <button class="button operator" data-op="=">=</button>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
